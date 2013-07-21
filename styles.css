@@ -1,0 +1,121 @@
+#header {
+    font-size: 20px;
+    background-color: teal;
+    opacity: .7;
+}
+
+body {
+    margin: 0 auto;
+    width: 960px;
+    font-family: Arial;
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: Helvetica;
+}
+
+h2 {
+    color: green;
+    font-size: 80%;
+}
+
+.column {
+    z-index: 1;
+    width: 280px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    background-color: #444444;
+    opacity: .7;
+}
+
+.middle {
+    width: 280px;
+}
+
+#pageBody {
+    display: inline-block;
+    width: 100%;
+}
+
+#footer {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.lClear {
+    clear: left;
+}
+
+.rClear {
+    clear: right;
+}
+
+nav ul, nav li {
+    list-style: none;
+}
+
+    nav li a {
+        color: blue;
+        text-decoration: none;
+    }
+
+nav li {
+    float: left;
+    margin-right: 10px;
+}
+
+    nav li li {
+        float: none;
+        clear: both;
+    }
+
+    nav ul ul, nav li li {
+        margin: 0;
+        padding: 0 0 0 10px;
+    }
+
+    nav li ul {
+        display: none;
+        z-index: 2;
+        background-color: white;
+    }
+
+nav {
+    clear: both;
+    width: 960px;
+    display: block;
+    float: left;
+}
+
+    nav ul ul {
+        padding: 5px 20px;
+    }
+
+    nav li li a:hover {
+        text-decoration:underline;
+    }
+
+    /****drop Down styles*/
+    nav ul li:hover ul{
+        position:absolute;
+        display:block;
+    }
+
+dt, dd {
+    float:left;
+}
+dt {
+    width:200px;
+    clear:left;
+}
+dd {
+    clear:right;
+}
