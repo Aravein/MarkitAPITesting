@@ -47,17 +47,18 @@ function GetQuote(CleanSymbol) {
                 if (results) {
                     var date = new Date(results.Timestamp);
                     var htmlBuilder = [];
+
+                    //Add outputs to the htmlBuilder
                     htmlBuilder.push("<fieldset><legend>" + results.Name + "</legend>");
                     htmlBuilder.push("<dl>");
                     htmlBuilder.push(NewRow("Volume", results.Volume));
                     htmlBuilder.push(NewRow("Last Price", results.LastPrice));
                     htmlBuilder.push(NewRow("Market Cap", results.MarketCap));
                     htmlBuilder.push(NewRow("Change Percent YTD", results.ChangePercentYTD));
-
                     htmlBuilder.push(NewRow("As of:", date.toDateString()));
-
                     htmlBuilder.push("</dl></fieldset>");
 
+                    //Append to page
                     $Output.append(htmlBuilder.join(''));
                 }
                 else {
